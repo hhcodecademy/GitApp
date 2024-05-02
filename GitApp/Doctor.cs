@@ -21,7 +21,11 @@ namespace GitApp
         public int DepartmentId { get; set; }
         public Department Department { get; set; }
         public ICollection<Diagnostic> Diagnostics { get; set; }
-      
 
+        public override string ToString()
+        {
+            return $"{{ {nameof(Id)} :{this.Id} {nameof(Salary)} : {this.Salary} }}";
+
+        }
     }
 }
