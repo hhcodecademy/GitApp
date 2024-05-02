@@ -14,5 +14,10 @@ namespace GitApp
         public int Name { get; set; }
         public ICollection<Doctor> Doctors { get; set; }
         public ICollection<Employee> Employees { get; set; }
+        public Department()
+        {
+            Doctors = new List<Doctor>();
+            Employees = new List<Employee>();
+        }
     }
 }
