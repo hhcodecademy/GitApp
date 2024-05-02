@@ -18,6 +18,10 @@
 
             Console.WriteLine(hospital2.ToString());
 
+            Employee employee = new Employee();
+            employee.Id = 3;
+            Console.WriteLine(employee.ToString());
+
         }
     }
 }
