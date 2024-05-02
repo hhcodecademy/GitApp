@@ -10,5 +10,10 @@ namespace GitApp
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public override string ToString()
+        {
+            string fullName = $"Id: {this.Id} Name: {this.Name}";
+            return fullName;
+        }
     }
 }

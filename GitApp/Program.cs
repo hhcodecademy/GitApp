@@ -5,11 +5,19 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            Department department= new Department();
-            
-            Doctor doctor = new Doctor();
-            doctor.Id = 1;
-            department.Doctors.Add(doctor);
+          
+            Hospital hospital = new Hospital();
+               hospital.Id = 1;
+            hospital.Name = "Baku Medical Plaza";
+
+            Console.WriteLine(hospital.ToString());
+
+            Hospital hospital2 = new Hospital();
+            hospital2.Id = 2;
+            hospital2.Name = "5 nomreli xestexana";
+
+            Console.WriteLine(hospital2.ToString());
+
         }
     }
 }
